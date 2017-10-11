@@ -37,22 +37,36 @@ header nav {
     justify-content: center;
 }
 
-header nav li {}
+header nav li {
+    margin-left: 40px;
+    margin-right: 40px;
+    padding-top: 10px;
+
+}
 
 header nav li a {
     display: inline-block;
     line-height: 50px;
-    padding: 10px;
+    color: white;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+header nav li a:hover {
+    color: #0a2443;
 }
 
 .logo {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
+    margin-top: 2px;
 }
 
 .facebook_ikon {
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
+    margin-top: 20px;
 }
 
 /********* BANNER *********/
