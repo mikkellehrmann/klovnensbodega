@@ -35,11 +35,15 @@ header nav {
     flex-wrap: nowrap;
     width: 100%;
     justify-content: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 1.2em;
 }
 
 header nav li {
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
     padding-top: 10px;
 
 }
@@ -47,15 +51,23 @@ header nav li {
 header nav li a {
     display: inline-block;
     line-height: 50px;
-    color: white;
+
+    color: #0a2443;
     text-decoration: none;
     list-style: none;
-
 }
 
 header nav li a:hover {
-    color: #0a2443;
+    color: orangered;
 }
+
+
+
+span {
+    padding-top: 25px;
+
+}
+
 
 .logo {
     width: 60px;
@@ -63,28 +75,24 @@ header nav li a:hover {
     margin-top: 2px;
 }
 
-.facebook_ikon {
-    width: 30px;
-    height: 30px;
-    margin-top: 20px;
-}
 
 /********* BANNER *********/
 
 #banner {
     width: 100vw;
     height: 49vw;
-    background-image: url(img/banner.jpg);
+    background-image: url(img/banner2.jpg);
     background-size: cover;
 }
 
 #banner h1 {
     font-family: 'Raleway', sans-serif;
     text-transform: uppercase;
-    font-size: 2.4em;
+    font-size: 2.2em;
     color: white;
     text-align: center;
-    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    padding-top: 40px;
+    text-shadow: 5px 0px 5px rgba(0, 0, 0, 0.5);
 }
 
 /********* SECTIONWRAPPER *********/
@@ -119,6 +127,7 @@ footer .column {
     flex-basis: 400px;
     text-align: center;
     line-height: 25px;
+    padding-bottom: 20px;
 }
 
 footer .column img {
@@ -146,19 +155,48 @@ footer .column li a {
 }
 
 
-@media screen and (min-width: 600px) {
+
+@media screen and (min-width: 560px) {
     footer .column {
-        flex-basis: 50%;
+        flex-basis: 350px;
+    }
+
+    #banner h1 {
+        padding-top: 40px;
+    }
+
+    header nav li {
+        margin-left: 30px;
+        margin-right: 30px;
+        padding-top: 10px;
+
     }
 
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 768px) {
+
+    footer .column {
+        flex-basis: 50%;
+    }
+
+    #banner h1 {
+        font-size: 4em;
+        padding-top: 150px;
+    }
+
+}
+
+@media screen and (min-width: 992px) {
     footer .column {
         flex-basis: 16.6%;
     }
 
     #banner h1 {
         font-size: 5em;
+        padding-top: 150px;
+
     }
+
+
 }
