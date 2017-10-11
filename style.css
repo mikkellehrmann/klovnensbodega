@@ -10,7 +10,11 @@ body {
 }
 
 h1 {
-    font-family: 'Luckiest Guy', cursive;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-size: 2.2em;
+    color: white;
+    text-align: center;
 }
 
 h2 {
@@ -51,7 +55,6 @@ header nav li {
 header nav li a {
     display: inline-block;
     line-height: 50px;
-
     color: #0a2443;
     text-decoration: none;
     list-style: none;
@@ -68,7 +71,6 @@ span {
 
 }
 
-
 .logo {
     width: 60px;
     height: 60px;
@@ -78,7 +80,42 @@ span {
 
 /********* BANNER *********/
 
-#banner {
+.forsidebanner {
+    width: 100vw;
+    background-image: url(img/banner2.jpg);
+    background-size: cover;
+}
+
+
+.forsidebanner:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.forsidebanner img {
+    width: 300px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 0px;
+}
+
+.aktivitetbanner {
+    width: 100vw;
+    height: 49vw;
+    background-image: url(img/banner3.jpg);
+    background-size: cover;
+}
+
+.kontaktbanner {
+    width: 100vw;
+    height: 49vw;
+    background-image: url(img/banner5.jpg);
+    background-size: cover;
+}
+
+.ombanner {
     width: 100vw;
     height: 49vw;
     background-image: url(img/banner2.jpg);
@@ -95,11 +132,21 @@ span {
     text-shadow: 5px 0px 5px rgba(0, 0, 0, 0.5);
 }
 
+#banner p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3em;
+    color: white;
+    text-align: center;
+    padding-top: 40px;
+    text-shadow: 5px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
 /********* SECTIONWRAPPER *********/
 
 .sectionwrapper {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 10px;
 }
 
 .sectionwrapper .column {
@@ -112,6 +159,37 @@ span {
     padding: 30px 30px 30px 30px;
 }
 
+/********* AKTIVITETER *********/
+
+.aktivitetmenu {
+    background-color: #d1d4d8;
+}
+
+ul.undermenu {
+    margin: 0 auto;
+    height: 50px;
+    width: 461px;
+    padding-top: 20px;
+    background-color: #d1d4d8;
+}
+
+.undermenu li {
+    display: inline;
+    margin: 10px;
+}
+
+.undermenu li a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    display: inline;
+    text-align: center;
+    text-decoration: none;
+    color: #0a2443;
+}
+
+.undermenu li a:hover {
+    color: orangered;
+}
 
 /********* FOOTER *********/
 
@@ -131,12 +209,14 @@ footer .column {
 }
 
 footer .column img {
-    width: 130px;
+    padding: 10px;
+    width: 120px;
 }
 
 #facebook {
     width: 50px;
-    padding-top: 20px;
+    padding-left: 30px;
+    padding-top: 50px;
     padding-bottom: 20px;
 }
 
@@ -154,9 +234,34 @@ footer .column li a {
     text-decoration: none;
 }
 
+@media screen and (min-width: 0px and max-width:561) {
 
+    .logo {
+        display: none;
+    }
+
+    .forsidebanner img {
+        width: 200px;
+    }
+}
+
+@media screen and (min-width: 0px) {
+
+    #banner_forside h1 {
+        padding: 0px;
+        padding-bottom: 50px;
+
+    }
+
+    header nav {
+        font-size: 0.8em;
+    }
+
+
+}
 
 @media screen and (min-width: 560px) {
+
     footer .column {
         flex-basis: 350px;
     }
@@ -172,6 +277,23 @@ footer .column li a {
 
     }
 
+    #banner_forside h1 {
+        padding: 0px;
+        padding-bottom: 50px;
+
+    }
+
+
+    header nav {
+        font-size: 0.8em;
+    }
+
+    .logo {
+        width: 60px;
+        height: 60px;
+        margin-top: 2px;
+    }
+
 }
 
 @media screen and (min-width: 768px) {
@@ -185,6 +307,23 @@ footer .column li a {
         padding-top: 150px;
     }
 
+    #banner_forside h1 {
+        padding: 0px;
+        padding-bottom: 100px;
+
+    }
+
+
+    header nav {
+        font-size: 1.2em;
+    }
+
+    .logo {
+        width: 60px;
+        height: 60px;
+        margin-top: 2px;
+    }
+
 }
 
 @media screen and (min-width: 992px) {
@@ -194,9 +333,24 @@ footer .column li a {
 
     #banner h1 {
         font-size: 5em;
-        padding-top: 150px;
+
+
+    }
+    #banner_forside h1 {
+        font-size: 5em;
+        padding: 0px;
+        padding-bottom: 100px;
 
     }
 
+
+    header nav {
+        font-size: 1.2em;
+    }
+    .logo {
+        width: 60px;
+        height: 60px;
+        margin-top: 2px;
+    }
 
 }
