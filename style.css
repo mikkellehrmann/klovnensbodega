@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-family: 'Luckiest Guy', cursive;
+}
+
+h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+}
+
+
+
+/********* FOOTER *********/
+
+footer {
+    background-color: #0c2648;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer .column {
+    flex-grow: 1;
+    flex-basis: 400px;
+    text-align: center;
+    line-height: 25px;
+}
+
+footer .column img {
+    width: 130px;
+}
+
+#facebook {
+    width: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+footer .column h3 {
+    padding-top: 25px;
+    text-transform: uppercase;
+}
+
+footer .column li {
+    line-height: 20px;
+}
+
+footer .column li a {
+    color: white;
+    text-decoration: none;
+}
