@@ -182,6 +182,10 @@ span {
     padding: 30px 30px 30px 30px;
 }
 
+.open {
+    margin-left: 0px;
+}
+
 /********* AKTIVITETER *********/
 
 .aktivitetmenu {
@@ -307,6 +311,10 @@ footer .column li a {
 
 @media screen and (min-width: 0px) and (max-width: 561px) {
 
+    .open {
+        margin-left: 0px;
+    }
+
     .logo {
         width: 60px;
         height: 60px;
@@ -357,6 +365,8 @@ footer .column li a {
     }
 
 
+
+
     header nav {
         font-size: 0.8em;
     }
@@ -385,12 +395,20 @@ footer .column li a {
         margin: 10px;
     }
 
+    .open {
+        margin-left: 0px;
+    }
+
 }
 
 @media screen and (min-width: 768px) {
 
     footer .column {
         flex-basis: 50%;
+    }
+
+    .open {
+        margin-left: 100px;
     }
 
     #banner h1 {
