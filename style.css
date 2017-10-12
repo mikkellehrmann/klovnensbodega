@@ -31,6 +31,7 @@ a {
     color: orangered;
 }
 
+
 /********* MENU *********/
 
 header {
@@ -172,14 +173,15 @@ span {
 ul.undermenu {
     margin: 0 auto;
     height: 50px;
-    width: 461px;
+    width: 360px;
     padding-top: 20px;
     background-color: #d1d4d8;
 }
 
 .undermenu li {
     display: inline;
-    margin: 10px;
+    font-size: 0.9em;
+    margin: 10px 0px 10px 5px;
 }
 
 .undermenu li a {
@@ -343,6 +345,24 @@ footer .column li a {
         width: 60px;
         height: 60px;
         margin-top: 2px;
+    }
+
+    table {
+        font-size: 1em;
+    }
+
+    ul.undermenu {
+        margin: 0 auto;
+        height: 50px;
+        width: 464px;
+        padding-top: 20px;
+        background-color: #d1d4d8;
+    }
+
+    .undermenu li {
+        display: inline;
+        font-size: 1em;
+        margin: 10px;
     }
 
 }
