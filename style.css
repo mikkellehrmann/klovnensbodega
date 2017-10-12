@@ -65,6 +65,10 @@ header nav li a {
     list-style: none;
 }
 
+.active {
+    color: orangered;
+}
+
 header nav li a:hover {
     color: orangered;
 }
