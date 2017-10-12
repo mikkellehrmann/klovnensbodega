@@ -27,6 +27,10 @@ h4 {
     font-weight: 700;
 }
 
+a {
+    color: orangered;
+}
+
 /********* MENU *********/
 
 header {
@@ -82,7 +86,7 @@ span {
 
 .forsidebanner {
     width: 100vw;
-    background-image: url(img/banner2.jpg);
+    background-image: url(img/banner6.jpg);
     background-size: cover;
 }
 
@@ -146,7 +150,7 @@ span {
 .sectionwrapper {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 
 .sectionwrapper .column {
@@ -191,11 +195,58 @@ ul.undermenu {
     color: orangered;
 }
 
+table {
+    width: 100%;
+    height: 100%;
+    border-spacing: 0px;
+}
+
+.column:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+td p {
+    color: dimgray;
+    font-weight: 100;
+    font-size: 0.7em;
+}
+
+tr {
+    background-color: white;
+
+}
+
+
+tr:first-child {
+    background-color: #d1d4d8;
+}
+
+tr:first-child p {
+    color: black;
+}
+
+td:first-child {
+    background-color: #d1d4d8;
+
+}
+
+td:first-child p {
+    color: black;
+}
+
+table td {
+    padding: 5px;
+    border-left: 1px solid #eee;
+
+}
+
 /********* FOOTER *********/
 
 footer {
-    background-color: #0a2443;
-    color: white;
+    background-color: #15273c;
+    color: #dcdeeb;
     display: flex;
     flex-wrap: wrap;
 }
@@ -230,7 +281,7 @@ footer .column li {
 }
 
 footer .column li a {
-    color: white;
+    color: #dcdeeb;
     text-decoration: none;
 }
 
@@ -353,4 +404,16 @@ footer .column li a {
         margin-top: 2px;
     }
 
+}
+
+.hs-responsive-embed-youtube iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.hs-responsive-embed-youtube {
+    position: relative;
+    padding-bottom: 56.25%;
+    /* 16:9 Aspect Ratio */
 }
